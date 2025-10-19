@@ -72,22 +72,26 @@
   position: relative;
 }
 
-line{
-    justify-content: space-between;
+.line {
+  display: flex;
+  justify-content: space-between; /* push items to edges */
+  align-items: center; /* vertical alignment */
+  margin-bottom: 15px; /* spacing below */
 }
-.line .forgot{
-    
-  display: inline-flex;
-  color: #b21a10;
-}
-.remember{
-    
-  position: relative;
-  display: inline-flex;
+
+.remember {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: #666;
+}
+
+.remember input {
+  margin-right: 5px; /* space between checkbox and text */
+}
+
+.forgot {
+  text-decoration: none;
+  color: #660B05; 
+  font-size: 0.9rem;
 }
 
 

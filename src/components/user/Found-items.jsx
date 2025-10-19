@@ -1,13 +1,10 @@
 import React from 'react'
-import './navbar.css'
-import logo from '../../assets/ifindlogo.png'
+import { useNavigate, Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Found = () => {
   return (
     <nav className='container'>
        
-      <img src={logo} alt="" className='logo' />
-
       <ul>
         <li>Home</li>
         <li>Lost Items</li>
@@ -18,4 +15,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Found
