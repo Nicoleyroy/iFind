@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
 import './login.css'
+import ForgotPassword from './forgot-password'
+import EnterCode from './send-code'
+import ResetPassword from './reset-password'
 import { useNavigate, Link } from 'react-router-dom'
 
 const Login = () => {
+const [modalStep, setModalStep] = useState(null);
+
   
   return (
+    <>
     <div className="login-page">
       <div className="login-card">
         <aside className="login-left">
@@ -44,7 +50,7 @@ const Login = () => {
                 />
                 <span>Remember me</span>
               </label>
-              <a className="forgot" href="#">Forgot password?</a>
+              <a className="forgot" href="#" onClick={e => {e.preventDefault(); setModalStep('forgot');}}>Forgot password?</a>
             </div>
 
             <div className="divider">- or -</div>
@@ -62,6 +68,26 @@ const Login = () => {
         </div>
       </div>
     </div>
+    {modalStep === 'forgot' && (
+  <ForgotPassword
+    onClose={() => setModalStep(null)}
+    onSend={() => setModalStep('code')}
+  />
+)}
+{modalStep === 'code' && (
+  <EnterCode
+    onClose={() => setModalStep(null)}
+    onVerify={() => setModalStep('reset')}
+  />
+)}
+{modalStep === 'reset' && (
+  <ResetPassword
+    onClose={() => setModalStep(null)}
+    onReset={() => setModalStep(null)}
+  />
+)}
+
+    </>
   )
 }
 

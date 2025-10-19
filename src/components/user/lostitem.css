@@ -1,0 +1,197 @@
+.nav-bar {
+  width: 100%;
+  height: 150px;
+  background: #430d08;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.2rem;
+  border-bottom: 2px solid #e1c88f;
+  box-sizing: border-box;
+}
+
+.nav-logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: color .18s;
+}
+
+.nav-link:hover {
+  color: #eddcb6;
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.profile-icon svg {
+  display: inline-block;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffeaba;
+}
+/* Container and header */
+.lost-main {
+  padding: 2rem;
+  background: #fafafd;
+  min-height: 100vh;
+}
+.lost-header {
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start;   
+  gap: 1.2rem;              
+  margin-bottom: 2rem;
+}
+.lost-title {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #23222c;
+  gap: 1.2rem;
+}
+.lost-row {
+  display: flex;
+  justify-content: flex-end;    
+  align-items: center;           
+  gap: 1.2rem;
+  width: 100%;
+  margin-bottom: 2rem;         
+}
+.lost-search {
+  padding: 0.7rem 1rem;
+  width: 380px;
+  font-size: 1rem;
+  border: 2px solid #eba697;
+  border-radius: 8px;
+  margin-bottom: 1.4rem;
+}
+.lost-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.lost-filter {
+  background: #f7e4e0;
+  border: none;
+  color: #60140f;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.lost-filter-active {
+  background: #800c07;
+  color: #fff;
+}
+
+/* Card grid layout */
+.lost-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Card */
+.lost-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(125, 85, 85, 0.07);
+  overflow: hidden;
+  border: 0.5px solid #f1e7e5;
+  min-width: 300px;
+}
+.lost-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.lost-card-body {
+  padding: 1rem 1.3rem 1.3rem 1.3rem;
+}
+.lost-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lost-card-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #23222c;
+}
+.lost-card-date {
+  font-size: 0.97rem;
+  color: #a2a2b1;
+}
+.lost-card-location {
+  font-size: 1rem;
+  color: #7e7e90;
+  margin-bottom: 1.5rem;
+}
+.lost-card-desc {
+  font-size: 1rem;
+  color: #7e7e90;
+  margin-bottom: 1.5rem;
+}
+.lost-card-status-row {
+  margin-bottom: 1.5rem;
+}
+.lost-status-unclaimed {
+  background: #f7cfcf;
+  color: #ba3548;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  padding: 0.3rem 1.2rem;
+  margin-right: 0.6rem;
+  display: inline-block;
+}
+.lost-status-pending {
+  background: #faefd1;
+  color: #c49e0a;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  padding: 0.3rem 1.2rem;
+  margin-right: 0.6rem;
+  display: inline-block;
+}
+.lost-card-claim {
+  width: 100%;
+  padding: 0.85rem 0;
+  background: #f8e3e0;
+  color: #ba3548;
+  font-size: 1.04rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.lost-card-claim:hover {
+  background: #fee9e4;
+}

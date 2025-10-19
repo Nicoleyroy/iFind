@@ -7,7 +7,13 @@ const Found = () => {
        
       <ul>
         <li>Home</li>
-        <li>Lost Items</li>
+        <li>
+          <Link to="/Lost-Item-Management">
+          <button className="px-4 py-2 bg-red-700 text-white rounded hover:bg-red-800">
+            Lost Items
+          </button>
+          </Link>
+          </li>
         <li>Found Items</li>
         <li>Contact Us</li>
       </ul>

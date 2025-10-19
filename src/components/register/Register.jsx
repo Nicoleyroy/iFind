@@ -62,7 +62,7 @@ const Register = () => {
           <div className="welcome-wrap">
             <h2>Welcome Back!</h2>
             <p>Already have an account?</p>
-            <Link to="/">
+            <Link to="/Login">
               <button className="outline-btn">Log in</button>
             </Link>
           </div>
